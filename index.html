@@ -1,7 +1,21 @@
 ---
 layout: default
 title: homepage
+fruit:
+ - title: Strawberry
+   description: The best of all the berries.
+ - title: Grapefruit
+   description: The best of all the fruits.
+ - title: Papaya
+   description: The worst of all the fruits.
+ - title: Banana
+   description: The boring but good one.
 ---
 <section>
-    <h2> Welcome to our {{page.title}} </h2>
+{% for item in page.fruit %}
+    <div class="fruit">
+        <h2> {{item.title}} </h2>
+        <p> {{item.description}}  </p>
+    </div>
+{% endfor %}
 </section>

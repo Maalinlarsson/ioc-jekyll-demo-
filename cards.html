@@ -1,0 +1,47 @@
+---
+layout: default
+title: card page
+cards:
+ - title: Big sale
+   description: Exciting things are happeing
+   date: 13th january
+   category: promo
+   url: https://www.sale.com
+ - title: New puppy
+   description: Woof woof
+   date: 4th april
+   category: BTS
+   url: https://www.sale.com
+ - title: Fresh salads
+   description: Free food to make friends
+   date: 18th july
+   category: perks
+   url: https://www.sale.com
+ - title: Houdinis tricks
+   description: Free food to make friends
+   date: 18th july
+   category: perks
+   url: https://www.sale.com
+---
+
+<section class="grid-spaceBetween padded bg-featured latest-news">
+
+    {% for item in page.cards %}
+      <!----- First card ----->
+      <div class="col-3_xs-8">
+        <div class="card">
+            <div class="bg-image portrait"> 
+                <span> {{item.category}} </span>
+            </div>
+         <div class="post-info">
+            <p class="date"> {{item.date}} </p>
+            <h3> {{item.title}} </h3>
+            <p> {{item.description}} </p>
+            <a href="{{item.url}}"> Find out more &nbsp; &#10141; </a>
+         </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+</section>

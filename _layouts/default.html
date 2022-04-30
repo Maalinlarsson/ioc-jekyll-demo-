@@ -12,11 +12,12 @@
         <!------------ Viewport meta for responsive ------------> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!------------ Gridlex for our flexbox grids ------------> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"> 
+
         <!------------ This is our custom stylesheet ------------> 
         <link rel="stylesheet" type="text/css" href="/style.css" />
 
-        <!------------ Gridlex for our flexbox grids ------------> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     </head>
 
     <body>
@@ -24,13 +25,16 @@
             <h1> Welcome to Pabben </h1>
             <nav>
                 <a href="/index.html"> Home </a>
-                <a href="/about.html"> About</a>
+                <a href="/about.html"> About </a>
+                <a href="/cards.html"> Cards </a>
             </nav>
         </header>
 
         {{content}}
 
-        <footer> This is a footer </footer>
+        <footer> 
+            <h2> This is a footer </h2> 
+        </footer>
 
     </body>
 </html>
